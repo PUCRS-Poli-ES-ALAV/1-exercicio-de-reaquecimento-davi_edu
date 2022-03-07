@@ -8,9 +8,29 @@ import org.junit.Test;
 
 public class RecursionTests {
 
+	public static void main(String[] args){
+		test();
+	}
+
 	@Test
-	public void test() { 
-		assertTrue("Será?", true);
+	public static void test() { 
+		//1
+		AssertEquals(Recursion.mult(6,4),24);
+
+		//2
+		AssertEquals(Recursion.inc(3,2),5);
+
+		//3
+		AssertEquals(Recursion.div(2),1.5);
+
+		//4
+		AssertEquals(Recursion.inv("teste"),"etset");
+
+		//5
+		AssertEquals(Recursion.seq(3),7);
+
+		//6
+		AssertEquals(Recursion.seqAck(3,4),125);
 	}
 
 }
